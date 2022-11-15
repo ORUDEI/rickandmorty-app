@@ -30,7 +30,6 @@ const Characters: React.FC<{ data: CharactersResponse }> = ({ data }) => {
   const onEnter = useCallback(
     (e: any) => {
       if (e.key === 'Enter') {
-        console.log('entre');
         if (filterData.length === 0) {
           router.push(`/characters/`);
         } else {
